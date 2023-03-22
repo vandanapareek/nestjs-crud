@@ -1,0 +1,433 @@
+{
+	"info": {
+		"_postman_id": "d7e31f0a-75c0-4c17-955f-f8b79692c344",
+		"name": "carsome",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17312480"
+	},
+	"item": [
+		{
+			"name": "category add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "SUV",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "top",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "SUV cars",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Toyota Fortuner",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "sj",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "descriptiom",
+							"value": "Toyota Fortuner",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "3000",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "641a83660de0243d7192dd1d",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "50",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product update by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Toyota Fortuner 101",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "sj1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "descriptiom",
+							"value": "flair jeans blue flair jeans blue flair jeans blue ",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "6000",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "641a83660de0243d7192dd1d",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "100",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/641a83a60de0243d7192dd1e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"641a83a60de0243d7192dd1e"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "200",
+							"disabled": true
+						},
+						{
+							"key": "quantity",
+							"value": "200",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product delete by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "flair jeans blue",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "slug",
+							"value": "sj1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "descriptiom",
+							"value": "flair jeans blue flair jeans blue flair jeans blue ",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "300",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "641a7cd681a42b380c341874",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "quantity",
+							"value": "100",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/641a83a60de0243d7192dd1e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"641a83a60de0243d7192dd1e"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "200",
+							"disabled": true
+						},
+						{
+							"key": "quantity",
+							"value": "200",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "shoes",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "slug",
+							"value": "shoes",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "banner",
+							"value": "shoes",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "skip",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "shoes",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sortOrder",
+							"value": "asc",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product?skip=0&limit=5&sortBy=name&sortOrder=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "skip",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "sortBy",
+							"value": "name"
+						},
+						{
+							"key": "sortOrder",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product by categ name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "skip",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "shoes",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sortOrder",
+							"value": "asc",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/productsByCategoryName/jeans?skip=0&limit=5&sortBy=name&sortOrder=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"productsByCategoryName",
+						"jeans"
+					],
+					"query": [
+						{
+							"key": "skip",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "sortBy",
+							"value": "name"
+						},
+						{
+							"key": "sortOrder",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
